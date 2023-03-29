@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h1 id = "clock">00:00:00</h1>
+    <form action="" id="login-form">
+        <input id="login-id" type="text" placeholder="닉네임">
+        <input id="login-button" type="submit" value="Login">
+    </form>
+    <h1 id="greeting" class="hidden">Welcome</h1>
+
+    <form action="" id="todo-form" class="hidden">
+        <input type="text" placeholder="투두를 입력해주세요">
+        <input type="submit" value="추가">
+    </form>
+    <!-- 할일의 총 개수와 완료한 할일 -->
+    <div id="tododone" class="hidden">전체 할일 0 | 완료한 할일 0</div>
+    <!-- <h3 id="count">전체 할일 0 | 완료한 할일 0</h3> -->
+    <ul id="todolist" class="hidden">
+    </ul>
+    
+    <script src="./js/background.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
